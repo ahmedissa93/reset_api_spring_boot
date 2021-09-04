@@ -29,9 +29,9 @@ public class UserService {
         return repository.findById(id).orElse(null);
     }
 
-    public User getUserByName(String name) {
-        return repository.findByUsername(name);
-    }
+//    public User getUserByName(String name) {
+//        return repository.findByUsername(name);
+//    }
 
     public String deleteUser(Long id) {
         repository.deleteById(id);
